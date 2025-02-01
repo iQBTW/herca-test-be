@@ -12,6 +12,6 @@ Buka Laragon (As Administrator) dan klik tombol Start All untuk menjalankan Apac
 
 2. Pindahkan project ke dalam folder laragon/www.
 3. Jalankan command npm install dan composer install (pastikan sudah menginstall composer) pada terminal.
-4. Export database yang ada pada root project (herca-test.sql) atau bisa menjalankan command php artisan migrate:fresh --seed (dengan data dummy).
-5. Export postman collection root project (Herca Test.postman_collection.json).
+4. Import database yang ada pada root project (herca-test.sql) ke phpMyAdmin atau bisa menjalankan command php artisan migrate:fresh --seed (dengan data dummy).
+5. Import postman collection root project (Herca Test.postman_collection.json).
 6. Jalankan npm run dev & php artisan serve di 2 terminal berbeda untuk menjalankan project.
