@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "241b7704-557d-43ea-adae-6b7c6d2e6ef9",
+		"name": "Herca Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27854973"
+	},
+	"item": [
+		{
+			"name": "Get All Marketing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/marketings",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"marketings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Penjualan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get PenjualanWithKomisi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/penjualankomisi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"penjualankomisi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Cicilan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cicilans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cicilans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Cicilan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "penjualan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_per_cicilan",
+							"value": "1000000",
+							"type": "text"
+						},
+						{
+							"key": "total_cicilan",
+							"value": "3000000",
+							"type": "text"
+						},
+						{
+							"key": "sisa_cicilan",
+							"value": "3000000",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2025-02-02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/cicilan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cicilan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Pembayaran Cicilan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran-cicilans",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran-cicilans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pembayaran Cicilan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "cicilan_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_pembayaran",
+							"value": "500000",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "2025-02-02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pembayaran-cicilan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pembayaran-cicilan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
