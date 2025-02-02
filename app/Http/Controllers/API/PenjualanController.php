@@ -77,7 +77,9 @@ class PenjualanController extends Controller
             'statusCode' => 200,
             'success' => true,
             'message' => 'Get penjualan komisi success',
-            'data' => $penjualanByCommissions
+            'data' => [
+                'data' => $penjualanByCommissions
+            ]
         ], 200);
     }
 }
